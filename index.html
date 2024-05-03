@@ -1,0 +1,111 @@
+<!DOCTYPE  html>
+<!-- Coding By Ali Aslan -->
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="desecription" content="Founded in 2018, CloudSeals is your trusted partner for comprehensive cloud management services. With expertise in cloud migration, optimization, and secure cloud solutions, we help businesses harness the power of cloud technology and AI advancements.">
+
+  <meta name="keywords" content="CloudSeals, Nebula Ai, Solutions, Center of Excellence, CSeals, Cloud, Automation, Simplify, Scalability, Efficiency, Skill Development, Ai, DevOps, NoOps, Curve, Adoptability, FinOps, Model, ROI, IT, ML, Machine Learning, Ai Ops, No Ops, Dev Ops">
+
+
+  <link rel="icon" type="image/x-icon" href="/images/c-logo-blue.png" type="image/png" sizes="16x16">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">>
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap-icons.css') }}">
+<link rel='stylesheet' type= "text/css" href= "{{ url_for('static',filename='css/fontawesome.min.css') }}">
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style_GE.css') }}">
+
+<script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+
+<!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+
+<title>Guardian Eye</title>
+
+</head>
+<body>
+
+  
+  <div class="container">
+
+      <!------- top Cloudseasl logo to right --------->
+
+      <div class="row">
+          <div class="d-flex justify-content-center">
+              <img src="{{ url_for('static',filename='images/CloudSeals_logo_50.png') }}" alt="Cloudseasl">
+          </div>
+      </div>
+<br>
+
+<div class="Clearfix"></div>
+
+<div class="d-flex flex-row bd-highlight">
+  <div class="p-2 bd-highlight flex-wrap">
+    <div class="drag-area" ondrop="upload_file(event)" ondragover="return false">
+      <div class="icon"><i class="fa fa-cloud-upload" aria-hidden="true"></i></div>
+        <header>Drag & Drop to Upload File</header>
+        <span>OR</span>
+        <input type="file" name="file" id="file" hidden>
+        <button >Browse File</button>
+    </div>
+  </div>
+
+
+<!----------------form stat here ---------------->
+
+<!-- <div class="Clearfix"></div>
+
+  <div class="d-flex flex-row bd-highlight">
+    <div class="p-2 bd-highlight flex-wrap">
+
+    <div class="container">
+        <form action="/PPE_detection" method="POST" enctype="multipart/form-data">
+
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+
+    </form>
+</div> -->
+
+
+<!--------- form ended here --------------------->
+
+
+  <div class="p-2 justify-content-between align-self-center flex-wrap">
+      <button class="button btn-light" onclick="showFile()">Submit</button>
+  </div>
+
+
+  <div class="p-2 bd-highlight flex-wrap">
+
+    <div class="drag-area">
+      <img src="{{ url_for('static',filename='images/output_image.jpg') }}" alt="Cloudseasl">
+      <!-- <img id="my-image" src="fileobj" class="hidden">
+      <style>
+         .hidden { display: none; }
+         .visible { display: block; }
+      </style>
+      <script>
+         const showImageButton = document.getElementById("show-image-button");
+         const myImage = document.getElementById("my-image");
+         showImageButton.addEventListener("click", () => { 
+            myImage.classList.toggle("visible"); 
+         });
+      </script>
+
+     -->
+  </div>
+</div>
+
+</div>
+
+<!------- java Script files------->
+
+<br><br>
+<script src="{{ url_for('static',filename='js/script.js') }}"></script>
+
+</body>
+</html>

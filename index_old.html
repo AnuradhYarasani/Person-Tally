@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CloudSeals GuardianEye Counting_Person</title>
+    <style>
+        body {
+            font-family: Montserrat;
+            background-color: #004BAE;
+                    }
+
+        #container {
+            max-width: 100%;
+            background-color: #004BAE;
+            padding: 20px;
+			color: white;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .image-container {
+            /* display: flex; */
+            justify-content: space-between;
+            width: 416px;
+            height: 416px;
+            border: 2px double #ffffff;
+            float: left;
+            margin-left: 50px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+		.text-container {
+            display: flex;
+            justify-content: space-between;
+            width: 416px;
+			 padding-left: 10px;
+            height: 416px;
+            border: 2px double #ffffff;
+            float: left;
+            margin-left: 50px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+		 .image-caption {
+            text-align: center;
+            margin: 10px 0;
+        }
+		.container2{
+    margin: 0px auto;
+    padding: 30px;
+}
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #logo {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+		
+		.text_title{
+        width: 100%;
+        height: 30px;
+        background: white;
+        color:  #133BC9;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+        /* font-family: OpenSans-Bold; */
+        font-size: 20px;
+        }
+
+        .text_title_inner {
+        color:  white;
+        text-align: right;
+        padding: 10px;
+        /* font-family: OpenSans-Medium; */
+        font-size: 18px;
+}
+		
+    </style>
+</head>
+
+
+
+
+<body>
+    <div id="container">
+        <div id="logo">
+            <img src="static/images/CloudSeals_logo_50.png" alt="Logo">
+        </div>
+        <h1>GuardianEye Workplace Safety</h1>
+        <form method="POST" action="/Counting_Person" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <button type="submit">Upload and Process</button>
+        </form>
+		<br><br>
+        <div class="image-container">
+            <img src="{{ input_image }}" alt="Input Image" class="image">
+        </div>
+		<div class="image-container">
+		    <img src="{{ output_image }}?{{ timestamp }}" alt="Output Image" class="image">
+			   
+            </div>
+		<div class="image-container">
+        <div class="text_title">Details of the properities</div>
+        <br><br>
+        <div class="text_title_inner">
+          <table>
+            <tr><td>{{ display_text | safe }}</td></tr>
+          </table>
+        </div>
+      
+      </div>
+
+    
+        </div>
+    </div>
+        </div>
+    </div>
+<!---div class="legend">
+    <ul>
+        <li style="list-style: circle; size: 60px; color:red;"> Red color is Yes</li>
+        <li style="list-style: circle; size: 60px; color:green;"> Gree color is No</li>
+    </ul>
+ 
+</div-->
+</body>
+</html>
