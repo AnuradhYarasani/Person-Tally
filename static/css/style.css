@@ -1,0 +1,127 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("../font/Poppins-Bold.ttf" );
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("../font/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../font/Poppins-Regular.ttf");
+}
+
+/* @font-face {
+	font-family: fontawesome-webfont;
+	src: url("../font/fontawesome-webfont.ttf");
+  } */
+  
+  @font-face {
+	font-family: fa-solid-900;
+	src: url("../font/fa-solid-900.ttf");
+  }
+
+body{
+    font-family: Poppins-Regular, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 25px;
+	background: #004BAE;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	 font-family: Poppins-SemiBold, sans-serif;
+	   font-weight: normal;
+}
+
+h1 {
+	font-size: 60px;
+	line-height: 70px;
+	color: white;
+}
+
+h2 {
+	font-size: 50px;
+	line-height: 60px;
+	color: white;
+	/* text-shadow: 3px 3px 4px #7c7b7b ; */
+}
+
+h3 {
+	font-size: 40px;
+	line-height: 50px;
+	color: white;
+}
+
+h4 {
+	font-size: 30px;
+	line-height: 40px;
+	color: white;
+}
+
+h5 {
+	font-size: 20px;
+	line-height: 30px;
+	color: white;
+}
+
+h6 {
+	font-size: 18px;
+	line-height: 26px;
+	color: white;
+}
+
+/****** fonm-controls ********/
+.form-control{
+	background:  #004BAE !important;
+	color: #ffffff !important;
+	border: none;
+	border-bottom: thin solid #ffffff !important;	
+}
+
+.form-control2{
+	background:  #ffffff !important;
+	color: #004BAE !important;
+	/* border: none; */
+	border-bottom: thin solid #7c7b7b !important;	
+}
+
+/**** end ******/
+
+#cloudControlInput1{
+	color: #ffffff !important;
+}
+
+.button{
+	font-family: Poppins-SemiBold, sans-serif;
+	padding: 20px !important;
+}
+a{
+	color:rgb(49, 243, 250);
+}
+
+.card{
+	width: 70%;
+	margin: 0px auto;
+	margin-top: 50px;
+}
+
+i{
+	font-family: fa-solid-900, sans-serif !important;
+	font-size: 100px !important;
+	color:#004BAE;
+}
+
+.Nebula_text{
+	text-align: justify !important;
+}
+
+.card{
+	border-top-left-radius: 40px !important;
+	border-bottom-right-radius: 40px !important;
+	text-align: justify;
+	box-shadow: #333232 3px 5px 10px;
+}
+
